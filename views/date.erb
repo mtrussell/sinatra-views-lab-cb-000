@@ -2,14 +2,8 @@
 <html>
 <body>
 
-<% d = Date.today %>
-<% day = d.strftime("%A") %>
-<% month = d.strftime("%B") %>
-<% date = d.mday %>
-<% year = d.year %>
-
 <h1>Today</h1>
-<p>Today is <%= day %>, <%= month %> <%= date %>, <%= year %></p>
+<p>Today is <%= Date.today.strftime("%A, %B %d, %Y") %></p>
 
 </body>
 </html>
